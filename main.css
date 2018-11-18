@@ -1,0 +1,311 @@
+/*-----Global-----*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align:baseline;
+}
+html {
+    font-family: Heiti SC, sanserif;
+    font-weight: 30;
+}
+
+body {
+    width: 100%;
+    background-image: url(images/BG_05.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    width:90%;
+    margin: 0 auto;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    color: #2B4B1C;
+    font-size: 48px;
+}
+p {
+    color: #404843;
+    font-size: 16px;
+}
+ul {
+    list-style: none;
+    margin-top:30px;
+}
+li {
+    color: #404843;
+    font-size:16px;
+    margin-bottom: 20px;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 0px;
+    background-color: none;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-color: #2B4B1C;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 20px 30px;
+    border: 0px;
+    border-top: 15px;
+    line-height: 25px;
+    background-color: #F7F7F7;
+    opacity: 0.85;
+}
+
+h4{
+    color: #2B4B1C;
+    font-size: 30px;
+}
+
+h5{
+    color: #3e543b;
+    font-size: 25px;
+}
+
+.tabcontent a img {
+    margin: 1%;
+    width: 70%;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.tabcontent a embed {
+    margin: 1%;
+    width: 45%;
+    opacity: 1;
+    transition: 0.3s;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+/*-----header-----*/
+header {
+    margin: 100px 0 200px 0;
+    text-align: center;
+}
+header p{
+    width: 45%;
+    margin: 30px auto 0 auto;
+    line-height: 20px;
+}
+header a{
+    color:#689629;
+    text-decoration: none; 
+    line-height: 20px;
+}
+
+/*-----work-----*/
+.work{
+    text-align: center;
+    width: 100%;
+}
+.work a img {
+    margin: 1%;
+    width: 45%;
+    opacity: 0.65;
+    transition: 0.3s;
+}
+.work a img:hover {opacity: 1}
+
+/*-----aboutMe-----*/
+.aboutMe {
+    text-align: center;
+    margin: 100px 0 200px 0;
+    position: relative;
+}
+.aboutMe h1 {
+    color: #56674D;
+}
+.Know {
+    color: #DEE6D3;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    top:-20px;
+    z-index: -1;
+}
+
+/*-----work2-----*/
+.work2 {
+    width:100%;
+    text-align: center;
+}
+.work2 a img {
+    margin: 1%;
+    width: 92%;
+    opacity: 1;
+    transition: 0.3s;
+}
+.work2 a img:hover {opacity: 0.65}
+
+.overlay a img {
+    width:100%;
+    text-align: center;
+    margin: 1%;
+    width: 92%;
+    opacity: 0.65;
+    transition: 0.3s;
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay h {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+/*-----footer-----*/
+footer {
+    text-align: center;
+    margin: 60px 0;
+}
+footer p {
+    color:#C8CBD1;
+}
+
+/*-----Responsive-----*/
+
+@media only screen and (max-width:991px) {
+    header p {
+        width: 100%;
+    }
+    .work a img {
+        margin: 2%;
+        width: 96%;
+        opacity: 1
+    }
+    .work2 a img {
+        margin: 2%;
+        width: 96%;
+        opacity: 1
+    }
+}
+@media only screen and (max-width: 760px) {
+    header {
+        width: 96%;
+        margin: 30px auto 100px auto;
+        text-align: left;
+    }
+    .aboutMe {
+        text-align: left;
+        width: 96%
+            margin: 70px auto 100px auto;
+    }
+    .Know {
+        visibility: hidden;
+    }
+    footer {
+        text-align: left; 
+        width: 90%;
+        margin: 60px auto;
+    }
+    ::-webkit-scrollbar {
+    width: 5px;
+}
